@@ -15,7 +15,8 @@
     revealItems.forEach(item => revealObserver.observe(item));
   }
   const videos = document.querySelectorAll('.video-card video');
-  if (!('IntersectionObserver' in window)) return;
+  // Touch devices use the native controls so a user's play or full-screen action is never interrupted.
+  if (window.matchMedia('(pointer: coarse)').matches || !('IntersectionObserver' in window)) return;
   const videoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       const video = entry.target;
