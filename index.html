@@ -3,41 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="PASA-KV is a visual patch attack on world action models that targets action-facing visual key/value routes and evaluates closed loop robot control.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="PASA-KV | Attacking action-facing visual routes">
-  <meta property="og:description" content="A world action model security study of action-facing visual K/V routes, adversarial patches, and closed loop robot behavior.">
-  <meta property="og:image" content="https://awesome-airsome.github.io/PASA-KV-ProjectPage/assets/video/clean-fastwam-poster.jpg">
-  <title>PASA-KV | Attacking action-facing visual routes</title>
-  <link rel="stylesheet" href="assets/site/site.css?v=20261015-mobile">
-  <script defer src="assets/site/site.js?v=20261015-mobile"></script>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="PASA-KV studies a visual patch attack on action-facing visual routes in world action models.">
+  <title>PASA-KV | Attacking Action-Facing Visual Routes</title>
+  <link rel="stylesheet" href="academic.css?v=20261015-academic">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container header-inner">
-    <a class="wordmark" href="#top" aria-label="PASA-KV home"><span class="wordmark-mark">P<span>·</span>K</span> PASA-KV</a>
-    <nav class="nav" aria-label="Main navigation"><a href="#idea">Idea</a><a href="#method">Method</a><a href="#results">Results</a><a href="#robot">Robot</a></nav>
-    <div class="header-links"><a class="header-code" href="#top">Paper <span aria-hidden="true">↗</span></a><span class="header-code header-code-disabled" aria-label="Code coming soon">Code <small>Coming soon</small></span></div>
-  </div></header>
-  <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title"><div class="container hero-grid">
-      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> ADVERSARIAL ATTACK · WAM SECURITY</div><h1 id="hero-title">Attacking <em>action-facing</em> visual routes</h1><p class="hero-subtitle">PASA-KV is a white box visual patch attack on world action models (WAM): it finds the key/value routes that robot actions read, then trains a small RGB patch against those routes and measures its effect on closed loop control</p><div class="hero-actions"><a class="button button-dark" href="#robot">Watch robot demos <span aria-hidden="true">↘</span></a><span class="button button-light button-disabled" aria-disabled="true">Code <small>Coming soon</small></span></div></div>
-      <div class="hero-visual"><img src="assets/video/clean-fastwam-poster.jpg" alt="Piper robot beside a tabletop pen and cup task" fetchpriority="high"><div class="hero-visual-top"><span class="live-dot"></span> REAL-ROBOT EVALUATION</div><div class="hero-visual-bottom"><span class="visual-index">PIPER / FASTWAM</span><span>See what happens when visual routes are redirected</span></div><div class="orb orb-one" aria-hidden="true"></div><div class="orb orb-two" aria-hidden="true"></div></div>
-    </div><div class="container hero-bottom"><span>Adversarial RGB patch · Visual K/V routes · Closed-loop evaluation</span><a href="#authors">Meet the authors <span aria-hidden="true">↓</span></a></div></section>
-    <section class="affiliation-strip" id="authors" aria-label="PASA-KV authors and institutions"><div class="container">
-      <div class="affiliation-label">Authors &amp; institutions</div>
-      <p class="project-authors"><span><a href="https://github.com/awesome-airsome">Zhongbo Wu</a><sup>1,2,3</sup>,</span> <span>Jiakai Huang<sup>1,3,*</sup>,</span> <span>Zheng Zhang<sup>3,4</sup>,</span> <span>Siyu Xu<sup>5</sup>,</span> <span>Kaixiang Chen<sup>1,*</sup>,</span> <span>Xiaohong Liu<sup>1</sup>,</span> <span>Shan You<sup>3</sup>,</span> <span>Chang Xu<sup>5</sup>,</span> <span>Tao Huang<sup>1,†</sup></span></p>
-      <div class="project-affiliations"><span><sup>1</sup> Shanghai Jiao Tong University</span><span><sup>2</sup> Shanghai Innovation Institute</span><span><sup>3</sup> ACE Robotics</span><span><sup>4</sup> Nanyang Technological University</span><span><sup>5</sup> School of Computer Science, The University of Sydney</span></div>
-      <p class="project-author-notes"><span>* Research intern</span><span>† Corresponding author</span></p>
-      <div class="institution-logos"><img src="assets/institutions/sjtu.png" alt="Shanghai Jiao Tong University" loading="lazy"><img src="assets/institutions/shanghai-innovation-institute.svg" alt="Shanghai Innovation Institute" loading="lazy"><img src="assets/institutions/ace-robotics.png" alt="ACE Robotics" loading="lazy"><img src="assets/institutions/ntu.svg" alt="Nanyang Technological University" loading="lazy"><img src="assets/institutions/university-of-sydney.png" alt="University of Sydney" loading="lazy"></div>
-    </div></section>
-    <section class="section idea-section" id="idea" aria-labelledby="idea-title"><div class="container"><div class="section-head reveal"><div class="section-kicker">01 <span></span> THE IDEA</div><h2 id="idea-title">The important question is <em>where actions read</em></h2><p>The attack targets visual K/V routes that feed action-facing readouts; closed-loop task success measures its behavioral effect</p></div><div class="idea-grid"><article class="idea-card reveal"><div class="idea-icon icon-route" aria-hidden="true"><span></span><span></span><span></span></div><span class="idea-number">01 / ROUTING</span><h3>Keys determine where to look</h3><p>Visual keys influence how action queries route attention over image tokens</p></article><article class="idea-card reveal"><div class="idea-icon icon-content" aria-hidden="true"><span></span><span></span><span></span></div><span class="idea-number">02 / CONTENT</span><h3>Values determine what arrives</h3><p>Visual values carry the content passed to the action-facing readout</p></article><article class="idea-card idea-card-accent reveal"><div class="idea-icon icon-action" aria-hidden="true"><span></span><span></span><span></span></div><span class="idea-number">03 / BEHAVIOR</span><h3>Closed-loop success is the test</h3><p>Internal displacement and action response are diagnostics; task success measures the final effect</p></article></div></div></section>
-    <section class="section method-section" id="method" aria-labelledby="method-title"><div class="container"><div class="section-head section-head-inline reveal"><div><div class="section-kicker">02 <span></span> ATTACK METHOD</div><h2 id="method-title">Probe. Select. <em>Train fresh</em></h2></div><p>A short search guided by action readouts chooses target layers before training a fresh adversarial patch shared across tasks</p></div><figure class="figure-panel method-figure reveal"><div class="figure-scroll"><img src="assets/figures/paper-2026-09/fig2_pipeline_paper_864dpi.png" alt="PASA-KV diagram showing an RGB patch entering visual K/V routes, the action readout, and the probe-select-train-evaluate pipeline" loading="lazy"></div><figcaption>Visual K/V are training targets. The deployed attack is an RGB patch on camera pixels; model weights remain frozen</figcaption></figure></div></section>
-    <section class="section results-section" id="results" aria-labelledby="results-title"><div class="container"><div class="section-head reveal"><div class="section-kicker">03 <span></span> RESULTS</div><h2 id="results-title">Results across three <em>world action models</em></h2><p>Policy success rate is the robot's task success rate. Lower success under attack means a stronger attack</p></div><div class="metric-row reveal"><div class="metric-feature"><span class="metric-eyebrow">FASTWAM · EVAL500</span><div class="metric-comparison"><div><strong>92.4<span>%</span></strong><small>Clean</small></div><span class="metric-arrow" aria-hidden="true">→</span><div><strong>0.0<span>%</span></strong><small>PASA-KV Top-5</small></div></div><p>FastWAM policy success across 500 evaluation episodes</p></div><div class="metric-side"><span class="metric-eyebrow">WHY SELECTION MATTERS · EVAL200</span><div class="side-stat"><strong>1.5%</strong><span>Tail-AV selected layers</span></div><div class="side-rule"></div><div class="side-stat muted"><strong>47.5%</strong><span>Probe K/V displacement selection</span></div><p>Matched conditions; same loss, target count, patch geometry, and training budget</p></div></div><figure class="figure-panel chart-panel reveal"><img src="assets/figures/readme/main_success.svg" alt="Main results across FastWAM, LingBot-VA, and Cosmos Policy, with PASA-KV rows highlighted" loading="lazy"><figcaption>Paper Table 1 · LIBERO-10 Eval500. PASA-KV Top-5 policy success: 0.0% on FastWAM, 87.2% on LingBot-VA, and 89.2% on Cosmos Policy. <a href="results.html">Full results and scope ↗</a></figcaption></figure></div></section>
-    <section class="section robot-section" id="robot" aria-labelledby="robot-title"><div class="container"><div class="section-head section-head-inline reveal"><div><div class="section-kicker">04 <span></span> REAL ROBOT</div><h2 id="robot-title">From pixels to <em>physical motion</em></h2></div><p>Piper demonstrations from the supplied clean and Top-5 attack recordings. Each clip is pre-rendered at 5× speed</p></div><div class="video-grid"><figure class="video-card reveal"><div class="video-topline"><span class="video-status clean-status"></span><strong>Clean FastWAM</strong><span>5× SPEED</span></div><video controls muted loop playsinline preload="metadata" poster="assets/video/clean-fastwam-poster.jpg" aria-label="Clean FastWAM Piper pen and cup demonstration"><source src="assets/video/clean-fastwam-5x.mp4?v=20261015-mobile" type="video/mp4">Your browser does not support HTML5 video.</video><figcaption><span>Clean run · Piper pen and cup task</span><a class="video-open" href="assets/video/clean-fastwam-5x.mp4?v=20261015-mobile" target="_blank" rel="noopener noreferrer">Open video ↗</a></figcaption></figure><figure class="video-card reveal"><div class="video-topline"><span class="video-status attack-status"></span><strong>PASA-KV Top-5</strong><span>5× SPEED</span></div><video controls muted loop playsinline preload="metadata" poster="assets/video/pasa-kv-top5-fastwam-poster.jpg" aria-label="PASA-KV Top-5 attack Piper pen and cup demonstration"><source src="assets/video/pasa-kv-top5-fastwam-5x.mp4?v=20261015-mobile" type="video/mp4">Your browser does not support HTML5 video.</video><figcaption><span>Attack run · Piper pen and cup task</span><a class="video-open" href="assets/video/pasa-kv-top5-fastwam-5x.mp4?v=20261015-mobile" target="_blank" rel="noopener noreferrer">Open video ↗</a></figcaption></figure></div><p class="video-footnote reveal">Qualitative pen-in-cup demonstrations. The reported trial outcomes across three tasks appear below</p><div class="robot-evidence reveal"><div><span class="small-label">PAPER TABLE 3 · PIPER</span><h3>One Top-5 patch<br>Three reported tasks</h3><p>A separately trained Piper FastWAM checkpoint uses one task-shared patch per Top-k condition, overlaid on the head-camera image at each replan</p></div><figure><img src="assets/figures/readme/robot_success.svg" alt="Piper real-robot success counts for three clean-capable tasks: clean 10, 4, and 6 of 10; Top-5 zero of 10 for each" loading="lazy"><figcaption>Reported comparison across three tasks with nonzero clean success; 10 trials per condition</figcaption></figure></div></div></section>
-    <section class="section closing-section" aria-labelledby="closing-title"><div class="container closing-grid"><div><div class="section-kicker">EXPLORE FURTHER</div><h2 id="closing-title">See the method<br><em>Explore the evidence</em></h2><p>Explore the method, reported results, and robot demonstrations. Reference code will follow</p><div class="closing-actions"><a class="button button-coral" href="results.html">View detailed results ↗</a><a class="text-link" href="#top">Paper ↗</a><span class="text-link text-link-disabled" aria-disabled="true">Code · Coming soon</span><a class="text-link" href="#robot">Robot demos ↗</a></div></div><div class="closing-art" aria-hidden="true"><span class="art-route art-one"></span><span class="art-route art-two"></span><span class="art-route art-three"></span><span class="art-core">K / V</span></div></div></section>
+  <header class="site-header">
+    <div class="wrap header-content">
+      <a class="brand" href="#top">PASA-KV</a>
+      <nav aria-label="Page sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#robot">Real robot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="paper-heading" aria-labelledby="paper-title">
+      <p class="field-label">World action model security · Visual patch attack</p>
+      <h1 id="paper-title">Attacking Action-Facing<br class="desktop-break"> Visual Routes</h1>
+      <p class="paper-subtitle">PASA-KV investigates how a small RGB patch can disrupt the visual key/value routes used by robot actions in world action models (WAM)</p>
+
+      <p class="authors"><span><a href="https://github.com/awesome-airsome">Zhongbo Wu</a><sup>1,2,3</sup></span>, <span>Jiakai Huang<sup>1,3,*</sup></span>, <span>Zheng Zhang<sup>3,4</sup></span>, <span>Siyu Xu<sup>5</sup></span>, <span>Kaixiang Chen<sup>1,*</sup></span>, <span>Xiaohong Liu<sup>1</sup></span>, <span>Shan You<sup>3</sup></span>, <span>Chang Xu<sup>5</sup></span>, <span>Tao Huang<sup>1,†</sup></span></p>
+      <div class="affiliations">
+        <span><sup>1</sup> Shanghai Jiao Tong University</span>
+        <span><sup>2</sup> Shanghai Innovation Institute</span>
+        <span><sup>3</sup> ACE Robotics</span>
+        <span><sup>4</sup> Nanyang Technological University</span>
+        <span><sup>5</sup> School of Computer Science, The University of Sydney</span>
+      </div>
+      <p class="author-notes">* Research intern &nbsp; † Corresponding author</p>
+      <div class="paper-links"><a class="paper-link" href="#top">Paper <span aria-hidden="true">↗</span></a><span class="paper-link unavailable" aria-label="Code coming soon">Code <small>Coming soon</small></span><a class="paper-link" href="#robot">Videos <span aria-hidden="true">↗</span></a></div>
+      <div class="institution-logos" aria-label="Participating institutions">
+        <img src="assets/institutions/sjtu.png" alt="Shanghai Jiao Tong University">
+        <img src="assets/institutions/shanghai-innovation-institute.svg" alt="Shanghai Innovation Institute">
+        <img src="assets/institutions/ace-robotics.png" alt="ACE Robotics">
+        <img src="assets/institutions/ntu.svg" alt="Nanyang Technological University">
+        <img src="assets/institutions/university-of-sydney.png" alt="University of Sydney">
+      </div>
+    </section>
+
+    <section class="content-section abstract-section" id="abstract" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <p>PASA-KV is a white box visual patch attack on world action models. It first uses short probes to identify visual key/value routes that influence action readouts, then selects layers with Tail-AV on held-out clean and patched observations. A fresh RGB patch is trained against the selected routes while the model remains frozen. We evaluate the attack through closed loop policy success in simulation and on a real robot.</p>
+    </section>
+
+    <section class="content-section" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><h2 id="method-title">Method</h2><p>The optimized object is an RGB patch on camera pixels. Visual keys affect where action queries read; visual values carry the content they receive</p></div>
+      <figure class="paper-figure method-figure">
+        <img src="assets/figures/paper-2026-09/fig2_pipeline_paper_864dpi.png" width="4776" height="3096" alt="PASA-KV method figure: the visual key and value attack surface, action readout, and the probe, select, train, evaluate process" loading="lazy">
+        <figcaption><strong>Method overview.</strong> PASA-KV probes candidate layers, selects action-facing routes using Tail-AV, and trains a fresh patch for evaluation</figcaption>
+      </figure>
+    </section>
+
+    <section class="content-section" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><h2 id="results-title">Simulation results</h2><p>Policy success rate measures completed tasks under closed loop evaluation. Lower success under attack indicates a stronger effect</p></div>
+      <figure class="paper-figure">
+        <img src="assets/figures/readme/main_success.svg" width="1500" height="575" alt="Main policy success results for FastWAM, LingBot-VA, and Cosmos Policy" loading="lazy">
+        <figcaption><strong>Main results.</strong> Policy success on LIBERO-10 Eval500 across three world action models</figcaption>
+      </figure>
+      <div class="finding-grid" aria-label="Selected quantitative findings">
+        <p><span>FastWAM · Eval500</span> Clean policy success was 92.4%; PASA-KV Top-5 reduced it to 0.0% across 500 evaluation episodes</p>
+        <p><span>Layer selection · Eval200</span> Tail-AV selected layers yielded 1.5% policy success, compared with 47.5% when layers were selected by probe K/V displacement under matched conditions</p>
+      </div>
+      <p class="minor-link"><a href="results.html#simulation">Detailed simulation results and evaluation scope ↗</a></p>
+    </section>
+
+    <section class="content-section" id="robot" aria-labelledby="robot-title">
+      <div class="section-heading"><h2 id="robot-title">Real robot evaluation</h2><p>Piper robot demonstrations from clean and PASA-KV Top-5 conditions, shown at 5× speed</p></div>
+      <div class="videos">
+        <figure class="video-figure">
+          <video controls muted playsinline preload="metadata" poster="assets/video/clean-fastwam-poster.jpg" aria-label="Clean FastWAM Piper robot demonstration"><source src="assets/video/clean-fastwam-5x.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>
+          <figcaption><strong>Clean FastWAM</strong> · Piper pen and cup task <a href="assets/video/clean-fastwam-5x.mp4" target="_blank" rel="noopener noreferrer">Open video ↗</a></figcaption>
+        </figure>
+        <figure class="video-figure">
+          <video controls muted playsinline preload="metadata" poster="assets/video/pasa-kv-top5-fastwam-poster.jpg" aria-label="PASA-KV Top-5 Piper robot demonstration"><source src="assets/video/pasa-kv-top5-fastwam-5x.mp4" type="video/mp4">Your browser does not support HTML5 video.</video>
+          <figcaption><strong>PASA-KV Top-5</strong> · Piper pen and cup task <a href="assets/video/pasa-kv-top5-fastwam-5x.mp4" target="_blank" rel="noopener noreferrer">Open video ↗</a></figcaption>
+        </figure>
+      </div>
+      <figure class="paper-figure robot-results">
+        <img src="assets/figures/readme/robot_success.svg" width="1400" height="335" alt="Piper robot task success under clean and attacked conditions across three tasks" loading="lazy">
+        <figcaption><strong>Real robot results.</strong> Success counts for three tasks with nonzero clean success, with 10 trials per condition. The videos above show qualitative examples</figcaption>
+      </figure>
+      <p class="minor-link"><a href="results.html#piper">Detailed Piper results and trial counts ↗</a></p>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><strong>PASA-KV</strong><span>Attacking Action-Facing Visual Routes in World Action Models</span><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="site-footer"><div class="wrap"><span>PASA-KV · Attacking Action-Facing Visual Routes</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>

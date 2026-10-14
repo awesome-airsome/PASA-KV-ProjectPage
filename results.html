@@ -3,28 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Detailed PASA-KV results across world action models and Piper robot tasks">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Detailed PASA-KV simulation and Piper robot results">
   <title>PASA-KV | Detailed results</title>
-  <link rel="stylesheet" href="assets/site/site.css?v=20261014-6">
-  <script defer src="assets/site/site.js"></script>
+  <link rel="stylesheet" href="academic.css?v=20261015-academic">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container header-inner">
-    <a class="wordmark" href="index.html#top" aria-label="PASA-KV home"><span class="wordmark-mark">P<span>·</span>K</span> PASA-KV</a>
-    <nav class="nav" aria-label="Main navigation"><a href="index.html#idea">Idea</a><a href="index.html#method">Method</a><a href="index.html#results">Results</a><a href="index.html#robot">Robot</a></nav>
-    <div class="header-links"><a class="header-code" href="index.html#top">Paper <span aria-hidden="true">↗</span></a><span class="header-code header-code-disabled" aria-label="Code coming soon">Code <small>Coming soon</small></span></div>
-  </div></header>
-  <main id="main" class="results-detail"><div class="container">
-    <div class="section-kicker">PASA-KV <span></span> RESULTS</div>
-    <h1>Results and <em>diagnostics</em></h1>
-    <p class="results-intro">Policy success is the robot's task success rate, so a lower value under attack indicates a stronger attack. FastWAM training used 40 tasks across LIBERO Spatial, Object, Goal, and LIBERO-10. The primary closed loop evaluation uses LIBERO-10 only: 10 tasks with 50 trials each</p>
-    <section class="results-detail-section" aria-labelledby="primary-title"><h2 id="primary-title">Primary comparison</h2><p>Paper Table 1 reports policy success and the recorded GPU hours needed to construct each patch. Each model uses its own cost scale</p><figure class="figure-panel"><img src="assets/figures/paper-main-results/table1_results.svg" alt="Policy success rates and recorded patch construction cost across FastWAM, LingBot-VA, and Cosmos Policy"><figcaption>Lower policy success indicates a stronger attack. The cost panels report construction time rather than policy latency</figcaption></figure></section>
-    <section class="results-detail-section" aria-labelledby="selection-title"><h2 id="selection-title">Why route selection matters</h2><p>Matched FastWAM controls use the same attack loss, patch geometry, target count, and training budget. This separate comparison uses 20 trials per LIBERO-10 task</p><figure class="figure-panel"><img src="assets/figures/readme/selection_controls.svg" alt="Matched FastWAM route selection controls with Tail-AV at 1.5 percent policy success"><figcaption>Tail-AV selects routes from action readouts without using rollout success labels</figcaption></figure></section>
-    <section class="results-detail-section" aria-labelledby="robot-title"><h2 id="robot-title">Piper robot outcomes</h2><p>Each reported condition has 10 physical trials. The intervals below are Wilson 95% intervals calculated from the published success counts. Baseline comparisons cover bowl stacking only and use different patch geometries</p><figure class="figure-panel"><img src="assets/figures/piper-real-robot/piper_results.svg" alt="Piper task success counts and Wilson intervals across three tasks and bowl stacking baselines"><figcaption>The intervals show uncertainty for the small number of trials; they were not part of the original paper tables</figcaption></figure></section>
-    <p class="results-back"><a class="button button-dark" href="index.html#results">← Back to project page</a></p>
-  </div></main>
-  <footer class="footer"><div class="container footer-inner"><strong>PASA-KV</strong><span>Attacking Action-Facing Visual Routes in World Action Models</span><a href="index.html#top">Back to top ↑</a></div></footer>
+  <header class="site-header">
+    <div class="wrap header-content">
+      <a class="brand" href="index.html#top">PASA-KV</a>
+      <nav aria-label="Page sections">
+        <a href="index.html#abstract">Abstract</a>
+        <a href="index.html#method">Method</a>
+        <a href="#simulation">Simulation</a>
+        <a href="#piper">Real robot</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap detail-page">
+    <div class="detail-heading">
+      <p class="field-label">PASA-KV · Evaluation</p>
+      <h1>Results and diagnostics</h1>
+      <p>Policy success is the robot's task success rate. FastWAM training used 40 tasks across LIBERO Spatial, Object, Goal, and LIBERO-10. The primary closed loop evaluation uses LIBERO-10: 10 tasks with 50 trials each</p>
+      <div class="detail-jumps"><a href="#simulation">Simulation results ↓</a><a href="#selection">Route selection ↓</a><a href="#piper">Piper robot results ↓</a></div>
+    </div>
+
+    <section class="content-section detail-section" id="simulation" aria-labelledby="primary-title">
+      <div class="section-heading"><h2 id="primary-title">Primary comparison</h2><p>Policy success and recorded GPU hours needed to construct each patch, as reported in the paper. Each model uses its own cost scale</p></div>
+      <figure class="paper-figure">
+        <img src="assets/figures/paper-main-results/table1_results.svg" width="1500" height="1200" alt="Policy success rates and recorded patch construction cost across FastWAM, LingBot-VA, and Cosmos Policy" loading="lazy">
+        <figcaption><strong>Paper Table 1.</strong> Lower policy success indicates a stronger attack. The cost panels report patch construction time</figcaption>
+      </figure>
+      <p class="minor-link"><a href="index.html#results">← Project page simulation overview</a></p>
+    </section>
+
+    <section class="content-section detail-section" id="selection" aria-labelledby="selection-title">
+      <div class="section-heading"><h2 id="selection-title">Route selection</h2><p>Matched FastWAM controls use the same attack loss, patch geometry, target count, and training budget. This comparison uses 20 trials per LIBERO-10 task</p></div>
+      <figure class="paper-figure">
+        <img src="assets/figures/readme/selection_controls.svg" width="1050" height="480" alt="Matched FastWAM route selection controls with Tail-AV at 1.5 percent policy success" loading="lazy">
+        <figcaption><strong>Selection control.</strong> Tail-AV selects routes from action readouts without using rollout success labels</figcaption>
+      </figure>
+    </section>
+
+    <section class="content-section detail-section" id="piper" aria-labelledby="robot-title">
+      <div class="section-heading"><h2 id="robot-title">Piper robot outcomes</h2><p>Each reported condition has 10 physical trials. Baseline comparisons cover bowl stacking only and use different patch geometries</p></div>
+      <figure class="paper-figure">
+        <img src="assets/figures/piper-real-robot/piper_results.svg" width="1440" height="850" alt="Piper task success counts and Wilson intervals across three tasks and bowl stacking baselines" loading="lazy">
+        <figcaption><strong>Real robot results.</strong> Wilson 95% intervals show uncertainty from the reported success counts. These intervals were calculated for this project page and are not part of the paper tables</figcaption>
+      </figure>
+      <p class="minor-link"><a href="index.html#robot">← Project page videos and real robot overview</a></p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><span>PASA-KV · Attacking Action-Facing Visual Routes</span><a href="index.html#top">Back to project page ↑</a></div></footer>
 </body>
 </html>
