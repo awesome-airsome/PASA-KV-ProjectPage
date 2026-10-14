@@ -8,7 +8,7 @@ The reported results are presented in the figures and [detailed results page](re
 
 ## Authors
 
-Zhongbo Wu¹²³, Jiakai Huang¹³*, Zheng Zhang³⁴, Siyu Xu⁵,<br>
+[Zhongbo Wu](https://github.com/awesome-airsome)¹²³, Jiakai Huang¹³*, Zheng Zhang³⁴, Siyu Xu⁵,<br>
 Kaixiang Chen¹*, Xiaohong Liu¹, Shan You³, Chang Xu⁵, Tao Huang¹†
 
 ¹ Shanghai Jiao Tong University<br>

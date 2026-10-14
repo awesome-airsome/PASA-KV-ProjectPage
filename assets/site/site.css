@@ -25,6 +25,7 @@
 .affiliation-strip{background:#fff;border-bottom:1px solid var(--line);padding:26px 0 34px}
 .affiliation-label{text-align:center;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--sea);margin-bottom:19px}
 .project-authors{display:flex;justify-content:center;flex-wrap:wrap;gap:2px 10px;text-align:center;font-size:15px;font-weight:700;line-height:1.8}
+.project-authors a{border-bottom:1px solid currentColor;transition:color .2s}.project-authors a:hover{color:var(--coral)}
 .project-authors span{white-space:nowrap}.project-authors sup,.project-affiliations sup{font-size:.72em;vertical-align:super;margin-left:1px}
 .project-affiliations{display:flex;justify-content:center;flex-wrap:wrap;gap:3px 20px;margin:12px auto 0;max-width:1050px;text-align:center;font-size:12px;color:var(--muted);line-height:1.7}
 .project-author-notes{display:flex;justify-content:center;gap:22px;margin-top:8px;font-size:11px;color:var(--muted)}
