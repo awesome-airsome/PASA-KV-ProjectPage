@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="480" viewBox="0 0 1050 480"><title>Why select action-facing routes?</title><rect width="1050" height="480" fill="#FAFBFC"/><style>text{font-family:Arial,sans-serif}</style>
+<text x="36" y="47" font-size="25" fill="#253744" font-weight="700">Why select action-facing routes?</text>
+<text x="36" y="77" font-size="13" fill="#617582" font-weight="400">Paper Table 2 · same victim, joint K/V loss, three targets, patch geometry, and 10k exposures</text>
+<rect x="28" y="105" width="994" height="304" rx="14" fill="white" stroke="#E3E8EB"/>
+<text x="46" y="135" font-size="18" fill="#253744" font-weight="700">Matched FastWAM selection controls</text>
+<line x1="238.0" y1="166" x2="238.0" y2="375" stroke="#E3E8EB"/>
+<text x="233.0" y="159" font-size="10" fill="#617582" font-weight="400">0</text>
+<line x1="600.0" y1="166" x2="600.0" y2="375" stroke="#E3E8EB"/>
+<text x="595.0" y="159" font-size="10" fill="#617582" font-weight="400">50</text>
+<line x1="962.0" y1="166" x2="962.0" y2="375" stroke="#E3E8EB"/>
+<text x="957.0" y="159" font-size="10" fill="#617582" font-weight="400">100</text>
+<text x="44" y="190" font-size="12" fill="#253744" font-weight="400">Probe-K/V</text>
+<rect x="238" y="178" width="343.9" height="16" rx="3" fill="#7997AB"/>
+<text x="587.9" y="190" font-size="11" fill="#253744" font-weight="400">47.5% (95/200)</text>
+<text x="44" y="224" font-size="12" fill="#253744" font-weight="400">Evenly spaced</text>
+<rect x="238" y="212" width="133.94" height="16" rx="3" fill="#7997AB"/>
+<text x="377.94" y="224" font-size="11" fill="#253744" font-weight="400">18.5% (37/200)</text>
+<text x="44" y="258" font-size="12" fill="#253744" font-weight="400">Random-1</text>
+<rect x="238" y="246" width="626.26" height="16" rx="3" fill="#7997AB"/>
+<text x="870.26" y="258" font-size="11" fill="#253744" font-weight="400">86.5% (173/200)</text>
+<text x="44" y="292" font-size="12" fill="#253744" font-weight="400">Random-2</text>
+<rect x="238" y="280" width="459.74" height="16" rx="3" fill="#7997AB"/>
+<text x="703.74" y="292" font-size="11" fill="#253744" font-weight="400">63.5% (127/200)</text>
+<text x="44" y="326" font-size="12" fill="#253744" font-weight="400">Random-3</text>
+<rect x="238" y="314" width="181.0" height="16" rx="3" fill="#7997AB"/>
+<text x="425.0" y="326" font-size="11" fill="#253744" font-weight="400">25.0% (50/200)</text>
+<text x="44" y="360" font-size="12" fill="#253744" font-weight="700">Tail-AV</text>
+<rect x="238" y="348" width="10.860000000000014" height="16" rx="3" fill="#E45B59"/>
+<text x="254.86" y="360" font-size="11" fill="#253744" font-weight="700">1.5% (3/200)</text>
+<text x="238" y="399" font-size="11" fill="#617582" font-weight="400">Policy success rate (%)</text>
+<text x="36" y="456" font-size="12" fill="#617582" font-weight="400">Tail-AV: 1.5% SR versus 47.5% for probe K/V displacement. Eval200 is separate from the Table 1 Eval500 comparison.</text>
+</svg>

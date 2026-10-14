@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1200" viewBox="0 0 1500 1200" role="img" aria-labelledby="title desc">
+<title id="title">Primary comparison results from manuscript Table 1</title><desc id="desc">Horizontal bar charts compare policy success rates and patch construction GPU hours for FastWAM, LingBot-VA, and Cosmos Policy. Lower success rate means a stronger attack.</desc><rect width="1500" height="1200" fill="#FAFBFC"/><style>text{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}</style>
+<text x="56" y="62" font-size="30" fill="#253744" font-weight="700" text-anchor="start">Primary results across world action models</text>
+<text x="58" y="97" font-size="14" fill="#617582" font-weight="400" text-anchor="start">Paper Table 1  ·  LIBERO-10 Eval500 (10 tasks × 50 trials)  ·  lower policy SR indicates a stronger attack</text>
+<rect x="56" y="119" width="14" height="14" rx="3" fill="#7997AB"/>
+<text x="77" y="131" font-size="12" fill="#617582" font-weight="500" text-anchor="start">WAM-adapted baselines</text>
+<rect x="261" y="119" width="14" height="14" rx="3" fill="#A4AFB5"/>
+<text x="282" y="131" font-size="12" fill="#617582" font-weight="500" text-anchor="start">Shared clean reference</text>
+<rect x="456" y="119" width="14" height="14" rx="3" fill="#E45B59"/>
+<text x="477" y="131" font-size="12" fill="#617582" font-weight="500" text-anchor="start">PASA-KV Top-k</text>
+<rect x="50" y="158" width="460" height="398" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="70" y="189" font-size="18" fill="#253744" font-weight="700" text-anchor="start">FastWAM</text>
+<text x="70" y="210" font-size="11" fill="#617582" font-weight="400" text-anchor="start">Policy success rate (%) · lower is stronger</text>
+<line x1="216.0" y1="234" x2="216.0" y2="519" stroke="#E3E8EB"/>
+<text x="216.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="271.0" y1="234" x2="271.0" y2="519" stroke="#E3E8EB"/>
+<text x="271.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">25</text>
+<line x1="326.0" y1="234" x2="326.0" y2="519" stroke="#E3E8EB"/>
+<text x="326.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">50</text>
+<line x1="381.0" y1="234" x2="381.0" y2="519" stroke="#E3E8EB"/>
+<text x="381.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">75</text>
+<line x1="436.0" y1="234" x2="436.0" y2="519" stroke="#E3E8EB"/>
+<text x="436.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">100</text>
+<text x="65" y="255" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<rect x="216" y="243" width="203.27999999999997" height="15" rx="3" fill="#A4AFB5"/>
+<text x="425.28" y="255" font-size="10" fill="#253744" font-weight="500" text-anchor="start">92.4</text>
+<text x="65" y="284" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="216" y="272" width="178.2" height="15" rx="3" fill="#7997AB"/>
+<text x="400.2" y="284" font-size="10" fill="#253744" font-weight="500" text-anchor="start">81.0</text>
+<text x="65" y="313" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="216" y="301" width="116.60000000000002" height="15" rx="3" fill="#7997AB"/>
+<text x="338.6" y="313" font-size="10" fill="#253744" font-weight="500" text-anchor="start">53.0</text>
+<text x="65" y="342" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="216" y="330" width="199.76" height="15" rx="3" fill="#7997AB"/>
+<text x="421.76" y="342" font-size="10" fill="#253744" font-weight="500" text-anchor="start">90.8</text>
+<text x="65" y="371" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="216" y="359" width="170.27999999999997" height="15" rx="3" fill="#7997AB"/>
+<text x="392.28" y="371" font-size="10" fill="#253744" font-weight="500" text-anchor="start">77.4</text>
+<text x="65" y="400" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="216" y="388" width="178.64" height="15" rx="3" fill="#7997AB"/>
+<text x="400.64" y="400" font-size="10" fill="#253744" font-weight="500" text-anchor="start">81.2</text>
+<text x="65" y="429" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="216" y="417" width="157.08000000000004" height="15" rx="3" fill="#7997AB"/>
+<text x="379.08000000000004" y="429" font-size="10" fill="#253744" font-weight="500" text-anchor="start">71.4</text>
+<text x="65" y="458" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="216" y="446" width="2.6399999999999864" height="15" rx="3" fill="#E45B59"/>
+<text x="224.64" y="458" font-size="10" fill="#253744" font-weight="500" text-anchor="start">1.2</text>
+<text x="65" y="487" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="216" y="475" width="9.680000000000007" height="15" rx="3" fill="#E45B59"/>
+<text x="231.68" y="487" font-size="10" fill="#253744" font-weight="500" text-anchor="start">4.4</text>
+<text x="65" y="516" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="216" y="504" width="1" height="15" rx="3" fill="#E45B59"/>
+<text x="222.0" y="516" font-size="10" fill="#253744" font-weight="700" text-anchor="start">0.0</text>
+<rect x="540" y="158" width="460" height="398" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="560" y="189" font-size="18" fill="#253744" font-weight="700" text-anchor="start">LingBot-VA</text>
+<text x="560" y="210" font-size="11" fill="#617582" font-weight="400" text-anchor="start">Policy success rate (%) · lower is stronger</text>
+<line x1="706.0" y1="234" x2="706.0" y2="519" stroke="#E3E8EB"/>
+<text x="706.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="761.0" y1="234" x2="761.0" y2="519" stroke="#E3E8EB"/>
+<text x="761.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">25</text>
+<line x1="816.0" y1="234" x2="816.0" y2="519" stroke="#E3E8EB"/>
+<text x="816.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">50</text>
+<line x1="871.0" y1="234" x2="871.0" y2="519" stroke="#E3E8EB"/>
+<text x="871.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">75</text>
+<line x1="926.0" y1="234" x2="926.0" y2="519" stroke="#E3E8EB"/>
+<text x="926.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">100</text>
+<text x="555" y="255" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<rect x="706" y="243" width="203.27999999999997" height="15" rx="3" fill="#A4AFB5"/>
+<text x="915.28" y="255" font-size="10" fill="#253744" font-weight="500" text-anchor="start">92.4</text>
+<text x="555" y="284" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="706" y="272" width="207.24" height="15" rx="3" fill="#7997AB"/>
+<text x="919.24" y="284" font-size="10" fill="#253744" font-weight="500" text-anchor="start">94.2</text>
+<text x="555" y="313" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="706" y="301" width="203.27999999999997" height="15" rx="3" fill="#7997AB"/>
+<text x="915.28" y="313" font-size="10" fill="#253744" font-weight="500" text-anchor="start">92.4</text>
+<text x="555" y="342" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="706" y="330" width="200.20000000000005" height="15" rx="3" fill="#7997AB"/>
+<text x="912.2" y="342" font-size="10" fill="#253744" font-weight="500" text-anchor="start">91.0</text>
+<text x="555" y="371" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="706" y="359" width="207.24" height="15" rx="3" fill="#7997AB"/>
+<text x="919.24" y="371" font-size="10" fill="#253744" font-weight="500" text-anchor="start">94.2</text>
+<text x="555" y="400" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="706" y="388" width="204.60000000000002" height="15" rx="3" fill="#7997AB"/>
+<text x="916.6" y="400" font-size="10" fill="#253744" font-weight="500" text-anchor="start">93.0</text>
+<text x="555" y="429" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="706" y="417" width="209.0" height="15" rx="3" fill="#7997AB"/>
+<text x="921.0" y="429" font-size="10" fill="#253744" font-weight="500" text-anchor="start">95.0</text>
+<text x="555" y="458" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="706" y="446" width="193.60000000000002" height="15" rx="3" fill="#E45B59"/>
+<text x="905.6" y="458" font-size="10" fill="#253744" font-weight="500" text-anchor="start">88.0</text>
+<text x="555" y="487" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="706" y="475" width="198.44000000000005" height="15" rx="3" fill="#E45B59"/>
+<text x="910.44" y="487" font-size="10" fill="#253744" font-weight="500" text-anchor="start">90.2</text>
+<text x="555" y="516" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="706" y="504" width="191.84000000000003" height="15" rx="3" fill="#E45B59"/>
+<text x="903.84" y="516" font-size="10" fill="#253744" font-weight="700" text-anchor="start">87.2</text>
+<rect x="1030" y="158" width="460" height="398" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="1050" y="189" font-size="18" fill="#253744" font-weight="700" text-anchor="start">Cosmos Policy</text>
+<text x="1050" y="210" font-size="11" fill="#617582" font-weight="400" text-anchor="start">Policy success rate (%) · lower is stronger</text>
+<line x1="1196.0" y1="234" x2="1196.0" y2="519" stroke="#E3E8EB"/>
+<text x="1196.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="1251.0" y1="234" x2="1251.0" y2="519" stroke="#E3E8EB"/>
+<text x="1251.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">25</text>
+<line x1="1306.0" y1="234" x2="1306.0" y2="519" stroke="#E3E8EB"/>
+<text x="1306.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">50</text>
+<line x1="1361.0" y1="234" x2="1361.0" y2="519" stroke="#E3E8EB"/>
+<text x="1361.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">75</text>
+<line x1="1416.0" y1="234" x2="1416.0" y2="519" stroke="#E3E8EB"/>
+<text x="1416.0" y="225" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">100</text>
+<text x="1045" y="255" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<rect x="1196" y="243" width="212.96000000000004" height="15" rx="3" fill="#A4AFB5"/>
+<text x="1414.96" y="255" font-size="10" fill="#253744" font-weight="500" text-anchor="start">96.8</text>
+<text x="1045" y="284" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="1196" y="272" width="209.44000000000005" height="15" rx="3" fill="#7997AB"/>
+<text x="1411.44" y="284" font-size="10" fill="#253744" font-weight="500" text-anchor="start">95.2</text>
+<text x="1045" y="313" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="1196" y="301" width="196.24" height="15" rx="3" fill="#7997AB"/>
+<text x="1398.24" y="313" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.2</text>
+<text x="1045" y="342" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="1196" y="330" width="196.24" height="15" rx="3" fill="#7997AB"/>
+<text x="1398.24" y="342" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.2</text>
+<text x="1045" y="371" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="1196" y="359" width="197.1199999999999" height="15" rx="3" fill="#7997AB"/>
+<text x="1399.12" y="371" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.6</text>
+<text x="1045" y="400" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="1196" y="388" width="198.44000000000005" height="15" rx="3" fill="#7997AB"/>
+<text x="1400.44" y="400" font-size="10" fill="#253744" font-weight="500" text-anchor="start">90.2</text>
+<text x="1045" y="429" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="1196" y="417" width="196.24" height="15" rx="3" fill="#7997AB"/>
+<text x="1398.24" y="429" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.2</text>
+<text x="1045" y="458" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="1196" y="446" width="197.1199999999999" height="15" rx="3" fill="#E45B59"/>
+<text x="1399.12" y="458" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.6</text>
+<text x="1045" y="487" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="1196" y="475" width="197.1199999999999" height="15" rx="3" fill="#E45B59"/>
+<text x="1399.12" y="487" font-size="10" fill="#253744" font-weight="500" text-anchor="start">89.6</text>
+<text x="1045" y="516" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="1196" y="504" width="196.24" height="15" rx="3" fill="#E45B59"/>
+<text x="1398.24" y="516" font-size="10" fill="#253744" font-weight="700" text-anchor="start">89.2</text>
+<text x="56" y="606" font-size="23" fill="#253744" font-weight="700" text-anchor="start">Recorded patch-construction cost</text>
+<text x="58" y="630" font-size="13" fill="#617582" font-weight="400" text-anchor="start">GPU-hours · lower is faster; each model has its own horizontal scale</text>
+<rect x="50" y="650" width="460" height="420" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="70" y="682" font-size="18" fill="#253744" font-weight="700" text-anchor="start">FastWAM</text>
+<text x="70" y="703" font-size="11" fill="#617582" font-weight="400" text-anchor="start">GPU-hours · scale 0–12</text>
+<line x1="216.0" y1="726" x2="216.0" y2="1011" stroke="#E3E8EB"/>
+<text x="216.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="326.0" y1="726" x2="326.0" y2="1011" stroke="#E3E8EB"/>
+<text x="326.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">6</text>
+<line x1="436.0" y1="726" x2="436.0" y2="1011" stroke="#E3E8EB"/>
+<text x="436.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">12</text>
+<text x="65" y="747" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<text x="224" y="747" font-size="11" fill="#617582" font-weight="500" text-anchor="start">—</text>
+<text x="65" y="776" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="216" y="764" width="77.55000000000001" height="15" rx="3" fill="#7997AB"/>
+<text x="299.55" y="776" font-size="10" fill="#253744" font-weight="500" text-anchor="start">4.23</text>
+<text x="65" y="805" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="216" y="793" width="87.63333333333333" height="15" rx="3" fill="#7997AB"/>
+<text x="309.6333333333333" y="805" font-size="10" fill="#253744" font-weight="500" text-anchor="start">4.78</text>
+<text x="65" y="834" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="216" y="822" width="197.08333333333337" height="15" rx="3" fill="#7997AB"/>
+<text x="419.08333333333337" y="834" font-size="10" fill="#253744" font-weight="500" text-anchor="start">10.75</text>
+<text x="65" y="863" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="216" y="851" width="118.25" height="15" rx="3" fill="#7997AB"/>
+<text x="340.25" y="863" font-size="10" fill="#253744" font-weight="500" text-anchor="start">6.45</text>
+<text x="65" y="892" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="216" y="880" width="112.19999999999999" height="15" rx="3" fill="#7997AB"/>
+<text x="334.2" y="892" font-size="10" fill="#253744" font-weight="500" text-anchor="start">6.12</text>
+<text x="65" y="921" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="216" y="909" width="114.58333333333331" height="15" rx="3" fill="#7997AB"/>
+<text x="336.5833333333333" y="921" font-size="10" fill="#253744" font-weight="500" text-anchor="start">6.25</text>
+<text x="65" y="950" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="216" y="938" width="42.7166666666667" height="15" rx="3" fill="#E45B59"/>
+<text x="264.7166666666667" y="950" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.33</text>
+<text x="65" y="979" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="216" y="967" width="44.0" height="15" rx="3" fill="#E45B59"/>
+<text x="266.0" y="979" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.40</text>
+<text x="65" y="1008" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="216" y="996" width="43.083333333333314" height="15" rx="3" fill="#E45B59"/>
+<text x="265.0833333333333" y="1008" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.35</text>
+<rect x="540" y="650" width="460" height="420" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="560" y="682" font-size="18" fill="#253744" font-weight="700" text-anchor="start">LingBot-VA</text>
+<text x="560" y="703" font-size="11" fill="#617582" font-weight="400" text-anchor="start">GPU-hours · scale 0–10</text>
+<line x1="706.0" y1="726" x2="706.0" y2="1011" stroke="#E3E8EB"/>
+<text x="706.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="816.0" y1="726" x2="816.0" y2="1011" stroke="#E3E8EB"/>
+<text x="816.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">5</text>
+<line x1="926.0" y1="726" x2="926.0" y2="1011" stroke="#E3E8EB"/>
+<text x="926.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">10</text>
+<text x="555" y="747" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<text x="714" y="747" font-size="11" fill="#617582" font-weight="500" text-anchor="start">—</text>
+<text x="555" y="776" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="706" y="764" width="43.34000000000003" height="15" rx="3" fill="#7997AB"/>
+<text x="755.34" y="776" font-size="10" fill="#253744" font-weight="500" text-anchor="start">1.97</text>
+<text x="555" y="805" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="706" y="793" width="54.120000000000005" height="15" rx="3" fill="#7997AB"/>
+<text x="766.12" y="805" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.46</text>
+<text x="555" y="834" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="706" y="822" width="196.68000000000006" height="15" rx="3" fill="#7997AB"/>
+<text x="908.6800000000001" y="834" font-size="10" fill="#253744" font-weight="500" text-anchor="start">8.94</text>
+<text x="555" y="863" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="706" y="851" width="190.29999999999995" height="15" rx="3" fill="#7997AB"/>
+<text x="902.3" y="863" font-size="10" fill="#253744" font-weight="500" text-anchor="start">8.65</text>
+<text x="555" y="892" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="706" y="880" width="186.77999999999997" height="15" rx="3" fill="#7997AB"/>
+<text x="898.78" y="892" font-size="10" fill="#253744" font-weight="500" text-anchor="start">8.49</text>
+<text x="555" y="921" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="706" y="909" width="190.08000000000004" height="15" rx="3" fill="#7997AB"/>
+<text x="902.08" y="921" font-size="10" fill="#253744" font-weight="500" text-anchor="start">8.64</text>
+<text x="555" y="950" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="706" y="938" width="21.120000000000005" height="15" rx="3" fill="#E45B59"/>
+<text x="733.12" y="950" font-size="10" fill="#253744" font-weight="500" text-anchor="start">0.96</text>
+<text x="555" y="979" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="706" y="967" width="24.200000000000045" height="15" rx="3" fill="#E45B59"/>
+<text x="736.2" y="979" font-size="10" fill="#253744" font-weight="500" text-anchor="start">1.10</text>
+<text x="555" y="1008" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="706" y="996" width="34.10000000000002" height="15" rx="3" fill="#E45B59"/>
+<text x="746.1" y="1008" font-size="10" fill="#253744" font-weight="500" text-anchor="start">1.55</text>
+<rect x="1030" y="650" width="460" height="420" rx="16" fill="white" stroke="#E3E8EB"/>
+<text x="1050" y="682" font-size="18" fill="#253744" font-weight="700" text-anchor="start">Cosmos Policy</text>
+<text x="1050" y="703" font-size="11" fill="#617582" font-weight="400" text-anchor="start">GPU-hours · scale 0–25</text>
+<line x1="1196.0" y1="726" x2="1196.0" y2="1011" stroke="#E3E8EB"/>
+<text x="1196.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">0</text>
+<line x1="1306.0" y1="726" x2="1306.0" y2="1011" stroke="#E3E8EB"/>
+<text x="1306.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">12.5</text>
+<line x1="1416.0" y1="726" x2="1416.0" y2="1011" stroke="#E3E8EB"/>
+<text x="1416.0" y="717" font-size="10" fill="#617582" font-weight="400" text-anchor="middle">25</text>
+<text x="1045" y="747" font-size="11" fill="#253744" font-weight="400" text-anchor="start">Clean reference</text>
+<text x="1204" y="747" font-size="11" fill="#617582" font-weight="500" text-anchor="start">—</text>
+<text x="1045" y="776" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DP-Attacker</text>
+<rect x="1196" y="764" width="25.34400000000005" height="15" rx="3" fill="#7997AB"/>
+<text x="1227.344" y="776" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.88</text>
+<text x="1045" y="805" font-size="11" fill="#253744" font-weight="400" text-anchor="start">DRIFT</text>
+<rect x="1196" y="793" width="29.304000000000087" height="15" rx="3" fill="#7997AB"/>
+<text x="1231.304" y="805" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.33</text>
+<text x="1045" y="834" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA-RFAS (no PSM)</text>
+<rect x="1196" y="822" width="208.91200000000003" height="15" rx="3" fill="#7997AB"/>
+<text x="1410.912" y="834" font-size="10" fill="#253744" font-weight="500" text-anchor="start">23.74</text>
+<text x="1045" y="863" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UPA</text>
+<rect x="1196" y="851" width="27.632000000000062" height="15" rx="3" fill="#7997AB"/>
+<text x="1229.632" y="863" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.14</text>
+<text x="1045" y="892" font-size="11" fill="#253744" font-weight="400" text-anchor="start">TMA</text>
+<rect x="1196" y="880" width="27.544000000000096" height="15" rx="3" fill="#7997AB"/>
+<text x="1229.544" y="892" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.13</text>
+<text x="1045" y="921" font-size="11" fill="#253744" font-weight="400" text-anchor="start">UADA</text>
+<rect x="1196" y="909" width="27.192000000000007" height="15" rx="3" fill="#7997AB"/>
+<text x="1229.192" y="921" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.09</text>
+<text x="1045" y="950" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-3</text>
+<rect x="1196" y="938" width="26.223999999999933" height="15" rx="3" fill="#E45B59"/>
+<text x="1228.224" y="950" font-size="10" fill="#253744" font-weight="500" text-anchor="start">2.98</text>
+<text x="1045" y="979" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-4</text>
+<rect x="1196" y="967" width="29.832000000000107" height="15" rx="3" fill="#E45B59"/>
+<text x="1231.832" y="979" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.39</text>
+<text x="1045" y="1008" font-size="11" fill="#253744" font-weight="600" text-anchor="start">PASA-KV Top-5</text>
+<rect x="1196" y="996" width="29.920000000000073" height="15" rx="3" fill="#E45B59"/>
+<text x="1231.92" y="1008" font-size="10" fill="#253744" font-weight="500" text-anchor="start">3.40</text>
+<text x="57" y="1114" font-size="12" fill="#617582" font-weight="400" text-anchor="start">FastWAM PASA-KV Top-k cost includes Probe100. Top-k patches are separately trained; Cosmos Policy ties the lowest observed SR at 89.2%.</text>
+<text x="57" y="1140" font-size="12" fill="#617582" font-weight="400" text-anchor="start">Construction costs follow the paper’s recorded protocols. See the manuscript table for method-specific settings and scope.</text>
+</svg>
