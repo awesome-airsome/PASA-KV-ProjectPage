@@ -2,6 +2,8 @@
 
 This repository contains the public project page for **PASA-KV: Attacking Action-Facing Visual Routes in World Action Models**. The reference implementation is being prepared for a later release.
 
+[Paper](https://arxiv.org/abs/2610.39816) · [Project page](https://awesome-airsome.github.io/PASA-KV-ProjectPage/)
+
 The site is static HTML, CSS, figures, and short demonstration videos. GitHub Pages can publish it from the `main` branch and repository root. The expected URL is `https://awesome-airsome.github.io/PASA-KV-ProjectPage/`.
 
 The reported results are presented in the figures and [detailed results page](results.html).
